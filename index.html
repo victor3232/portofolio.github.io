@@ -4,29 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Daftar Pembayaran</title>
+    <title>Metode Pembayaran</title>
 </head>
 <body>
     <div class="container">
-        <h1>Daftar Pembayaran</h1>
-        <ul class="payment-list">
-            <li>
-                <img src="https://via.placeholder.com/50" alt="Pembayaran 1">
-                <span>Pembayaran 1</span>
-            </li>
-            <li>
-                <img src="https://via.placeholder.com/50" alt="Pembayaran 2">
-                <span>Pembayaran 2</span>
-            </li>
-            <li>
-                <img src="https://via.placeholder.com/50" alt="Pembayaran 3">
-                <span>Pembayaran 3</span>
-            </li>
-            <li>
-                <img src="https://via.placeholder.com/50" alt="Pembayaran 4">
-                <span>Pembayaran 4</span>
-            </li>
-        </ul>
+        <div class="payment-method">
+            <div class="header">
+                <span>DANA</span>
+                <span class="status ready">Ready</span>
+            </div>
+            <div class="details">
+                <p class="account-number">0858178565153</p>
+                <p class="account-name">A/N: Painzy</p>
+            </div>
+            <button class="copy-button">Copy Number</button>
+        </div>
+
+        <div class="payment-method">
+            <div class="header">
+                <span>GoPay</span>
+                <span class="status not-ready">Not Ready</span>
+            </div>
+            <div class="details">
+                <p class="account-number">085819183072</p>
+                <p class="account-name">A/N: Painzy Official</p>
+            </div>
+            <button class="copy-button">Copy Number</button>
+        </div>
+
+        <div class="payment-method">
+            <div class="header">
+                <span>QRIS</span>
+                <span class="status ready">Ready</span>
+            </div>
+            <div class="details">
+                <p class="account-name">A/N: TOYSHOP store</p>
+                <div class="qr-code">
+                    <img src="qr-code-placeholder.png" alt="QR Code">
+                </div>
+            </div>
+            <button class="copy-button">Copy Number</button>
+        </div>
     </div>
 </body>
 </html>
