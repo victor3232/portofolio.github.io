@@ -1,52 +1,86 @@
 body {
-    margin: 0;
+    background-color: #121212;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #74ebd5, #ACB6E5);
-    animation: backgroundChange 10s infinite alternate;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
 }
 
 .container {
-    text-align: center;
-    padding: 50px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-h1 {
-    color: #333;
-}
-
-.payment-list {
-    list-style: none;
-    padding: 0;
-}
-
-.payment-list li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin: 10px 0;
+.payment-method {
+    background-color: #1e1e1e;
     padding: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
-.payment-list li:hover {
-    transform: translateY(-5px);
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
-.payment-list img {
-    margin-right: 10px;
-    border-radius: 50%;
-    transition: transform 0.3s;
+.header span {
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.payment-list img:hover {
-    transform: scale(1.1);
+.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
 }
 
-@keyframes backgroundChange {
-    0% { background-color: #74ebd5; }
-    100% { background-color: #ACB6E5; }
+.ready {
+    background-color: #4caf50;
+}
+
+.not-ready {
+    background-color: #f44336;
+}
+
+.details {
+    margin-bottom: 10px;
+}
+
+.account-number {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.account-name {
+    font-size: 14px;
+    color: #bbbbbb;
+}
+
+.copy-button {
+    background-color: #009688;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.copy-button:hover {
+    background-color: #00796b;
+}
+
+.qr-code {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.qr-code img {
+    width: 100px;
+    height: 100px;
 }
